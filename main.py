@@ -10,11 +10,11 @@ os.chdir(currentPath)
 
 aug = Img_aug() #데이터 증강 class 선언 
 augment_num = 40 #증강결과로 출력되는 이미지의 갯수 선언 
-name = 'zahir'
+name = 'adela'
 save_path = 'output/' + name 
 
 #불투명이미지로 교체
-img = cv2.imread('bser/Zahir_Mini.jpg') 
+img = cv2.imread('bser/Adela_Mini.jpg') 
 
 images_aug = aug.seq.augment_images([img for i in range(augment_num)]) 
 
